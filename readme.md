@@ -4,7 +4,9 @@ atomic_clock is convenient API around atomic int64 of monotonic clock.
 Use for time accounting. Do not use where actual time value matters.
 
 
-# Usage [![GoDoc](https://pkg.go.dev/github.com/temoto/atomic_clock?status.svg)](https://godoc.org/github.com/temoto/atomic_clock)
+# Usage
+
+[Documentation](https://pkg.go.dev/github.com/temoto/atomic_clock)
 
 Key takeaways:
 
