@@ -31,4 +31,14 @@ func TestIfZero(t *testing.T) {
 
 	c.SetIfZero(1)
 	assert.NotEqual(t, 1, c.get())
+
+	c.SetNowIfZero()
+	assert.Equal(t, src, c.get())
+
+	c.Set(0)
+	assert.True(t, c.IsZero())
+	c.SetNowIfZero()
+	assert.NotEqual(t, 1, c.get())
+	assert.NotEqual(t, src, c.get())
+	assert.InDelta(t, 0, Since(c), float64(delta))
 }
