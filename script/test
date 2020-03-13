@@ -1,0 +1,5 @@
+#!/bin/bash
+set -eu
+cd "$( dirname "${BASH_SOURCE[0]}" )/.."
+
+go test -v -covermode=atomic -coverprofile=coverage.txt -race ./...
